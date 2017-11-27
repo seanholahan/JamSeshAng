@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
 
+  console.log('It works here')
+    var panel = new Interface.Panel()
+
+    // place your script here; below is for demo only
+    var btn = new Interface.Button({ bounds:[0,0,.5,.5], label:'test' })
+
+    panel.add( btn )
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,12 +16,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'arp'
 
-console.log('hats  up')
-  panel = new Interface.Panel()
 
-      // place your script here; below is for demo only
-      btn = new Interface.Button({ bounds:[0,0,1,1], label:'test' })
 
-      panel.add( btn )
 
 }
